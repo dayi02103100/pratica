@@ -1,0 +1,154 @@
+    body{
+   background-color: #E4E4E1;
+ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;    
+    
+    
+    }
+.pagina{
+    text-align:center ;
+}
+
+    html{
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    
+/* * selecciona todos los elementos del html
+ la coma"," es para poner varios selectores 
+ los mismos elementos 
+ :before va a ser antes de 
+ :after va a ser despues de*/
+    *, *:before, *:after{
+        box-sizing: inherit;
+    }
+
+
+    h1{
+            text-align: center;
+            font-size: 90px;
+            text-transform: uppercase;/*mayuscula*/
+            color: #CD5C5C;
+            font-family: 'Lobster';
+            font-weight: 300;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 52px;
+            color: #FFF0F5;
+            font-family: 'Monotype Corsiva';
+        }
+
+        h2{
+            text-align: left;
+            font-family: 'Arvo';
+            color:brown ;
+            font-size: 26px;
+            text-align: center;
+
+        }
+        
+        a{
+            font-size: 22px;
+
+        }
+
+        h3{     
+            font-size: 23px;
+            color:indianred ; 
+
+        }   
+       
+
+        p{
+            font-size: 18px;
+            font-family:Century;
+            color: black;
+
+        }
+
+        
+        
+
+        @media(min-width: 760px){
+            .navegacion-principal{
+                flex-direction: row;
+            }
+        }
+
+
+        .navegacion-principal{
+            background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            margin-bottom: 50px;
+        }
+
+
+        .navegacion-principal a{
+            color: black;
+            font-family: Century;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bolder;
+            height: 63px;
+             
+
+        }
+
+        
+        /*hover  alguna accion al colocar el cursor*/
+        .navegacion-principal a:hover{
+             background-color: rgba(188, 143, 143, 0.63);
+        }
+
+        .hero{
+            background-image: url(../img/imgB.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 490px;
+        }
+
+       .contenido-hero {
+            background-color: rgba(0, 0, 0, 0.63);
+            padding: 63px; /*relleno de los lados*/
+            
+        }  
+
+
+        .sombra{
+            -webkit-box-shadow: 0px 3px 11px 12px rgba(163,201,199,1);
+            -moz-box-shadow: 0px 3px 11px 12px rgba(163,201,199,1);
+            box-shadow: 0px 3px 11px 12px rgba(163,201,199,1);
+            background-color: #FAEBD7	;  
+            border-radius: 70px;
+        } 
+
+        @media(min-width:768px){
+            .servicios{
+                display: grid;
+                grid-template-columns: 1fr 1fr;/*33.3% o 1fr esto colocara elnumro de columnas que tendra */
+                text-align: center;
+                /*grid-template-rows: 900px 10px; ó
+                grid: 900px 900px / 700px 400px filas*/
+                column-gap: 80px;/*separacion de columnas*/
+                row-gap: 20px;
+                line-height: 2;
+                
+            }
+        }
+
+        
+
+        
+        /*
+        @media(min-width <= 370px){
+            body{
+            background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+           }
+        }*/

@@ -1,0 +1,50 @@
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Monotype Corsiva'; 
+}
+form{/*formulario*/
+    width: min(60rem, 100%); /*tulizar el valor mas pequeño*/
+   margin: 0 auto;
+    font-size: 20px;
+    text-align:center ;
+    width: 480;
+    height: 480px;
+    background-size: cover;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 60px;
+    border-style: dashed;   
+    font-weight: bold;
+
+}
+input{ /*caja de texto*/
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+}
+
+h3{
+    font-size: 25px;
+    color:brown ;
+}
+
+.boton{
+    background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+width: 200px;
+height: 40px;
+font-weight:  bold;
+font-size: 15px;
+border-radius: 8px;
+margin-top: 2px;
+text-transform: uppercase;
+border-style: solid;
+}
+
+.boton:hover{/*animacion del cursor en furma de mano 
+    al pararse encima del boton*/
+    cursor:pointer;
+}
+
+div{/*espacios entre cajas de texto*/
+    margin-top: 20px;
+}

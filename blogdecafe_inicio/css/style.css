@@ -1,0 +1,369 @@
+html{
+    font-family: 'Fredoka', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5px;
+    
+}
+
+
+*, *:before, *:after{
+    box-sizing: inherit;
+
+}
+
+body{
+    font-family: 'Fredoka', sans-serif ;
+    font-size: 30px;
+    line-height:  2;
+}
+
+
+/*globales*/
+
+.contenedor{
+    max-width: 120rem;
+    margin-left: 220px ;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3, h4{
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 37px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 27px;
+}
+
+img{
+    max-width: 100%;
+}
+.texto{
+    font-size: 20px;
+}
+
+/*utilidades*/
+
+.no-margin{
+    margin:0
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/*header*/
+/*
+.webp .header{/*primero cargara la imagen webp
+    background-image: url(../img/banner.webp);
+
+}
+
+.no-webp .header{/*si no soporta el webp carga el jpg
+    background-image: url(../img/banner.jpg);
+
+}*/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;/*center dos veces para centrar verticalmente y horizontalmente*/
+}   
+
+@media(min-width: 768px){
+    .header__texto{
+        margin-top: 10px;
+
+    }
+
+}
+
+.barra{
+    padding-top: 30px;
+    
+}
+
+.blog{
+    text-align: left;
+}
+
+.header__texto{
+    text-align: center;
+    color: white;
+    margin-top: 85px;
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: white;
+}
+
+.logo__nombre{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap:2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block;/*elementos uno abajo del otro*/
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    margin-right: 20px;
+}
+@media(min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 10px;
+    }
+}
+
+
+
+.entrada{
+    border-bottom: 1px solid brown;
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.entrada__imagen{
+    width: 400px;
+    height: 400px;
+    margin-bottom: -60px;
+    
+}
+
+.boton{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+
+.boton--primario{
+    background-color: black;
+}
+
+@media(min-width:768px){
+    .boton{
+        display: inline-block;
+        border-radius: 10px;
+
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton--secundario{/*herando de otra clase pero con un cambio*/
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.cursos {
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+     font-weight: bold;
+}
+
+.widget-curso__info{
+    font-weight: normal;
+}
+
+.footer{
+    background-color: black;
+    padding-bottom: 3px;
+    margin-top: 20px;
+}
+
+/*--------------------Sobre Nosotros--------------------------*/
+
+@media(min-width: 768px){/*forma en flex con mismo resultado*/
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: calc(50% - 1rem);/*o width*//*separacion */
+    }
+
+    /*.sobre-nosotros{/**forma en grid con mismo resultado**
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }*/
+    /*.sobre-nosotros__imagen{
+        flex: 0 0 calc(50% - 1rem);
+    } 
+    
+    otra forma de acomodar los contenidos
+
+    .sobre-nosotros__imagen{
+        flex: 0 0 calc(50% - 1rem);
+    }*/
+
+}
+
+/*--------------------------cursos----------------------*/
+.curso{
+    padding: 1rem 0;
+    border-bottom: 1px solid ;
+}
+.curso:last-of-type{
+    border: none;
+}
+
+@media(min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 30.3% 50.7%;/*1fr 2fr*/
+        column-gap: 2rem;
+    }
+}
+
+.curso__label{
+    font-weight: bold;
+}
+
+.curso__info{
+   font-weight: normal;
+}
+
+.footer{
+   background-color: black;
+   padding-bottom: 3px;
+   margin-top: 20px;
+}
+
+.imagenB{
+    margin-left: 90px;
+    width: 700px;
+}
+
+.p{
+    margin-right: 50px;
+}
+
+/*-----------------------contacto---------------------*/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    width: 1000px;
+    height: 400px;
+
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor{
+    text-align: center;
+    align-items: center ;
+}
+
+
+.formulario{
+    background-color: wheat;
+    margin: -3rem auto 0 43px;
+    width: 85%;
+    padding: 30px;
+    
+    border: 2px solid;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 20px ;
+    gap: 5px;
+    
+    text-align: left;
+}
+
+.campo__label{
+    flex: 0 0 90px;
+    text-align: left;
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid gray
+}
+
+.campo__field--textarea{
+    height: 2rem;
+}
+
+.sidebar{/*correacion*/
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 85em;
+    margin-inline-start: 9px;
+    margin-inline-end: 70px;
+    padding-inline-start: 1px;
+    text-align: left;
+}

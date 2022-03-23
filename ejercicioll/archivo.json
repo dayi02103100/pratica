@@ -1,0 +1,50 @@
+[
+    {
+        
+        "productoimagen": "img/img1.png",
+        "pnombre": "Oso con rosas preservadas",
+        "pprecio": "250.000"
+
+    },
+
+    {
+        
+        "productoimagen": "img/img2.png",    
+        "pnombre": "Rosa preservada, con urna de cristal y 4 chocolates",
+        "pprecio": "150.000"
+    },
+ 
+    {
+        
+        "productoimagen": "img/img3.png",
+        "pnombre": "llaveros con rosas preservadas ¡Elige el color de tu flor!",
+        "pprecio": "60.000"
+
+    },
+
+    {
+        
+        "productoimagen": "img/img4.png",
+        "pnombre": "Virgen de marmolina con tres rosas preservadas y urna de cristal colgante",
+        "pprecio": "70.000"
+
+    },
+
+    {
+        
+        "productoimagen": "img/img5.png",
+        "pnombre": "urna de cristal con rosa preservada y caja elegante personalizable",
+        "pprecio": "220.000"
+
+    },
+    
+    {
+        
+        
+        "columnas": "",
+        "productoimagen": "img/img6.png",
+        "pnombre": "Caja grande de corazon con rosas, virgen grande de marmolina con rosa preservada",
+        "pprecio": "200.000 | 90.000"
+
+    }
+]

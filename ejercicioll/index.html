@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body ><!--res = respuesta-->
+    
+    <section class="tituloProbando">
+    </section>
+
+    
+
+
+
+    
+<section class="tituloB">
+    <input id="buscador" class="buscador" placeholder="BUSCAR...">
+</section>
+  
+
+
+<div id="res" class="columnas">
+    
+    </div>
+
+<script>
+    document.addEventListener('keyup', e=>{
+    if(e.target.matches("#buscador")){
+        document.querySelectorAll(".producto").forEach(nombre =>{
+            nombre.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?nombre.classList.remove("filtro")
+            :nombre.classList.add("filtro")
+        })
+
+    }
+
+
+})
+    </script>
+<!--div class="grid">
+    <div class="producto">
+        <img class="productoimagen">
+        <div class="informacion">
+
+        </div>
+    </section>
+    </div>
+    </div-->
+    <script src="js/script.js"></script>
+    <script src="archivo.json"></script>
+
+</body>
+</html>
